@@ -1,16 +1,18 @@
 import React from 'react'
 import './App.css'
-import Home from './Pages/Home'
+
 
 
 function App() {
 
 
   return (
-    <React.Fragment>
-      <Home />
-    </React.Fragment>
+    <>
+      <h1>Hello</h1>
+
+
+    </>
   )
 }
 
-export default App
+export default App;
