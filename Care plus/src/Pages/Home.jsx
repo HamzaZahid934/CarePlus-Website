@@ -4,11 +4,10 @@ import Navbar from '../Components/Navbar'
 
 const Home = () => {
   return (
-    <>
 
-      <div>HELLLOOOO</div>
+    <h1>hello</h1>
 
-    </>
+
   )
 }
 
