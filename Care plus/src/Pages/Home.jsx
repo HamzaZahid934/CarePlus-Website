@@ -1,15 +1,13 @@
 import React from 'react'
-import CategoryGrid from '../Components/CategoryGrid'
-import LatestProducts from '../Components/LatestProducts'
-import AboutSection from '../Components/AboutSection'
+
+
 
 
 
 const Home = () => {
   return (
-    <>
-      <hero className='bg-[#faeada]'>
-        <div className="w-full max-w-[1336px] mx-auto px-5 mt-20 bg-[#faeada]">
+       
+        <div className='container mt-20'>
           <div className="flex justify-between items-start gap-6">
             {/* Hero Left Section */}
             <div className="flex flex-col justify-between items-start w-full max-w-[45%] gap-[160px]">
@@ -19,7 +17,7 @@ const Home = () => {
                 </h1>
                 <div className="mt-4">
                   <a href="/category" className="primary-button inline-block">
-                    <div className="relative mt-3">
+                    <div className="relative mt-0 px-0">
                       <button className="text-sm font-sans text-white bg-[#111235] px-7 py-4 border-r-4 rounded-lg hover:bg-[#f4765b]">
                         VIEW COLLECTION
                       </button>
@@ -63,8 +61,8 @@ const Home = () => {
                   <img src="https://cdn.prod.website-files.com/65f19ff47c0ac41abb16b0fa/663486bdefaafa41dc14d448_hero.jpg" alt="Hero Image" className="object-cover w-full h-[530px]" />
                 </div>
               </div>
-              <div className="flex gap-8 mt-6 pl-25">
-                <div className="flex items-start bg-white rounded w-full max-w-[20%] p-2 gap-2">
+              <div className="flex gap-12 mt-6 pl-25">
+                <div className="flex items-center bg-white rounded w-full max-w-[20%] p-2 gap-2">
                   <img src="https://cdn.prod.website-files.com/65f19ff47c0ac41abb16b0fa/66348a778473b4b6c936bd52_ic-hero.svg" alt="Best Seller Icon" className="w-8 h-8 bg-white" />
                   <div className='bg-white'>Best Seller Product</div>
                 </div>
@@ -79,11 +77,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </hero>
-      <CategoryGrid />
-      <LatestProducts />
-      <AboutSection />
-    </>
+      
+      
+      
   )
 }
 

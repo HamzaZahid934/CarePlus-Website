@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,9 @@ const Navbar = () => {
                 <div className="container mx-auto flex items-center justify-between px-4 md:px-8">
                     {/* Brand */}
                     <div className="text-lg font-bold font-sans">
-                        <a href="/" className="pl-0">
+                        <Link to="/" className="pl-0">
                             <img src={Logo} typeof='svg' alt='CarePlus'></img>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Hamburger Menu (visible on small screens) */}
@@ -43,36 +44,24 @@ const Navbar = () => {
                     {/* Centered Menu (hidden on small screens) */}
                     <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
                         <ul className="flex space-x-4">
-                            <li>
-                                <a href="/src/Pages/About.jsx" className="text-black uppercase px-2 text-sm">
+                                <Link to={"/about"} className="text-black uppercase px-2 text-sm">
                                     About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/src/Pages/Categories.jsx" className="text-black uppercase px-2 text-sm">
+                                </Link>
+                                <Link to={"/categories"} className="text-black uppercase px-2 text-sm">
                                     Categories
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/src/Pages/Shop.jsx" className="text-black uppercase px-2 text-sm">
+                                </Link>
+                                <Link to={"/shop"} className="text-black uppercase px-2 text-sm">
                                     Shop
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/src/Pages/Blogs.jsx" className="text-black uppercase px-2 text-sm">
+                                </Link>
+                                <Link to={"/blogs"} className="text-black uppercase px-2 text-sm">
                                     Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/src/Pages/Reviews.jsx" className="text-black uppercase px-2 text-sm">
+                                </Link>
+                                <Link to={"/reviews"} className="text-black uppercase px-2 text-sm">
                                     Reviews
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/src/Pages/Contact.jsx" className="text-black uppercase px-2 text-sm">
+                                </Link>
+                                <Link to={"/contact"} className="text-black uppercase px-2 text-sm">
                                     Contact
-                                </a>
-                            </li>
+                                </Link>
                         </ul>
                     </div>
 
@@ -136,19 +125,19 @@ const Navbar = () => {
                         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-10">
                             <ul className="flex flex-col items-center space-y-4 py-4">
                                 <li>
-                                    <a href="/" className="text-black uppercase px-2 text-sm">
+                                    <Link to="/" className="text-black uppercase px-2 text-sm">
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/about" className="text-black uppercase px-2 text-sm">
+                                    <Link to="/about" className="text-black uppercase px-2 text-sm">
                                         About
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/contact" className="text-black uppercase px-2 text-sm">
+                                    <Link to="/contact" className="text-black uppercase px-2 text-sm">
                                         Contact
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
