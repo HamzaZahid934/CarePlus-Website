@@ -3,10 +3,12 @@ import Logo from "../assets/logo.svg";
 import SearchIcon from "../assets/search.svg";
 import UserIcon from "../assets/User.svg";
 import CartIcon from "../assets/cart.svg";
+
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+ 
 
   return (
     <nav>
@@ -98,7 +100,7 @@ const Navbar = () => {
                 <img src={UserIcon} alt="User Icon" className="w-6 h-6" />
               </button>
             </Link>
-            <Link>
+            <Link  to={"/cart"}>
               <button
                 className="text-black focus:outline-none flex items-center"
                 aria-label="Cart"
