@@ -1,4 +1,5 @@
 import React from 'react'
+import MarqueeSlider from '../Components/MarqueeSlider'
 
 
 
@@ -6,7 +7,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-       
+       <>
         <div className='container mt-20'>
           <div className="flex justify-between items-start gap-6">
             {/* Hero Left Section */}
@@ -18,7 +19,7 @@ const Home = () => {
                 <div className="mt-4">
                   <a href="/category" className="primary-button inline-block">
                     <div className="relative mt-0 px-0">
-                      <button className="text-sm font-sans text-white bg-[#111235] px-7 py-4 border-r-4 rounded-lg hover:bg-[#f4765b]">
+                      <button className="text-sm font-sans text-white bg-button-dark px-7 py-4 border-r-4 rounded-lg hover:bg-button-hover">
                         VIEW COLLECTION
                       </button>
                     </div>
@@ -77,7 +78,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      
+        <MarqueeSlider/>
+      </>
       
       
   )
