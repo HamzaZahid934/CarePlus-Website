@@ -10,7 +10,7 @@ export const fetchData = createAsyncThunk("categories/fetchData", async () => {
 // Initial state
 const initialState = {
   categories: [], 
-  status: "idle", 
+status: "idle",     
   error: null,
 };
 

@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -33,6 +35,7 @@ function App() {
           <Route path="/cart" element = {<Cart/>}/>
         </Routes>
         <Footer />
+        <ToastContainer/>
       </Router>
     </>
   );
