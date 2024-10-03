@@ -14,7 +14,7 @@ import Reviews from "./Pages/Reviews";
 import Contact from "./Pages/Contact";
 import SignUp from "./Pages/SignUp";
 import Login from "./Pages/Login";
-import Cart from "./Components/Cart";
+
 
 function App() {
   return (
@@ -32,7 +32,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element= {<SignUp/>}/>
           <Route path="/login" element ={<Login/>} />
-          <Route path="/cart" element = {<Cart/>}/>
         </Routes>
         <Footer />
         <ToastContainer/>

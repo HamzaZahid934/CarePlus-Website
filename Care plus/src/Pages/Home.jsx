@@ -1,6 +1,4 @@
 import React from 'react'
-import MarqueeSlider from '../Components/MarqueeSlider'
-import Faq from '../Components/Faq'
 
 
 const Home = () => {
