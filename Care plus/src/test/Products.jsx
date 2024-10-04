@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchProductsByCategoryID } from '../Redux/Slice/Products_slice';
-import ProductCard from '../Components/Cards/ProductCard';
 
-const Shop = () => {
+
+const Products = () => {
   const { categoryid, categoryname } = useParams();
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
@@ -51,4 +51,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Products;

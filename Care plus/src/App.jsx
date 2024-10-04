@@ -16,6 +16,7 @@ import SignUp from "./Pages/SignUp";
 import Login from "./Pages/Login";
 
 
+
 function App() {
   return (
     <>
@@ -26,12 +27,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/about" element={<About />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/:categoryid/:categoryname" element={<Shop />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element= {<SignUp/>}/>
           <Route path="/login" element ={<Login/>} />
+          
         </Routes>
         <Footer />
         <ToastContainer/>

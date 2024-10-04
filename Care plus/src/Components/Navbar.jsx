@@ -60,9 +60,6 @@ const Navbar = () => {
               >
                 Categories
               </Link>
-              <Link to={"/shop"} className="text-black uppercase px-2 text-sm">
-                Shop
-              </Link>
               <Link to={"/blogs"} className="text-black uppercase px-2 text-sm">
                 Blog
               </Link>

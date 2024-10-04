@@ -19,6 +19,7 @@ const categoriesSlice = createSlice({
   name: "categories",
   initialState,
   reducers: {},
+
   extraReducers: (builder) => {
     builder
       .addCase(fetchData.pending, (state) => {
@@ -32,8 +33,7 @@ const categoriesSlice = createSlice({
         state.error = action.error.message; // Store the error message
         state.status = "failed";
       });
-  },
-});
+  }});
 
 // Export the reducer to be used in the store
 export default categoriesSlice.reducer;
