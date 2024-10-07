@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -13,13 +14,13 @@ const Home = () => {
                   Where every pet finds comfort and joy!
                 </h1>
                 <div className="mt-4">
-                  <a href="/category" className="primary-button inline-block">
+                  <Link to={"/categories"} className="primary-button inline-block">
                     <div className="relative mt-0 px-0">
                       <button className="text-sm font-sans text-white bg-button-dark px-7 py-4 border-r-4 rounded-lg hover:bg-button-hover">
                         VIEW COLLECTION
                       </button>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-row gap-0 left-0 bottom-0">

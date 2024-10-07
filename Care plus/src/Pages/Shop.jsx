@@ -28,7 +28,7 @@ const Shop = () => {
   console.log('productcategoryID:',product.category)
   return product.category === categoryid
  })
- console.log(filteredproducts)
+ 
 
 
 
@@ -40,6 +40,7 @@ const Shop = () => {
           {filteredproducts.map((product, index) => (
             <ProductCard
               key={index}
+              id = {product._id}
               image={product.image}
               title={product.name}
               price={product.price}

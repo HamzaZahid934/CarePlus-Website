@@ -14,6 +14,7 @@ import Reviews from "./Pages/Reviews";
 import Contact from "./Pages/Contact";
 import SignUp from "./Pages/SignUp";
 import Login from "./Pages/Login";
+import ProductDetails from "./Pages/ProductDetails";
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/signup" element= {<SignUp/>}/>
           <Route path="/login" element ={<Login/>} />
+          <Route path="/product/:id" element={<ProductDetails />}/>
           
         </Routes>
         <Footer />

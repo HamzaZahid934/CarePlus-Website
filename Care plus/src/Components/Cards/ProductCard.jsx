@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({ image, title, price }) => {
-  console.log(title)
+const ProductCard = ({ image, title, price,id }) => {
+  console.log(id)
   return (
-    
+    <Link  to = {`/product/${id}`}>
     <div className="bg-white rounded-md shadow-md overflow-hidden p-4 max-w-sm">
       <img className="w-full" src={`http://localhost:8000/${image}`} alt="Info card" />
       <div className="px-6 py-4 ">
@@ -14,6 +14,7 @@ const ProductCard = ({ image, title, price }) => {
         </p>
       </div>
     </div>
+    </Link>
    
   );
 };

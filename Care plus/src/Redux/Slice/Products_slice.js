@@ -11,6 +11,15 @@ export const fetchProductsByCategoryID = createAsyncThunk(
   }
 );
 
+// Async thunk to fetch product by ID
+export const fetchProductById = createAsyncThunk(
+  "products/fetchProductById",
+  async (id) => {
+    const response = await axios.get(`http://localhost:8000/getproductbyid/${id}`);
+    return response.data;
+  }
+);
+
 // Initial state
 const initialState = {
   products: [],
@@ -35,6 +44,17 @@ const productsSlice = createSlice({
       .addCase(fetchProductsByCategoryID.rejected, (state, action) => {
         state.error = action.error.message;
         state.status = 'failed';
+      })
+      .addCase(fetchProductById.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(fetchProductById.fulfilled, (state, action) => {
+        state.product = action.payload;
+        state.status = "succeeded";
+      })
+      .addCase(fetchProductById.rejected, (state, action) => {
+        state.error = action.error.message;
+        state.status = "failed";
       });
   },
 });
